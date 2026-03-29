@@ -36,7 +36,6 @@ def employees_with_projects(db_path):
 def salary_rank_by_department(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    # The test looks for (name, dept, salary, rank)
     query = """
         SELECT 
             e.name, 
